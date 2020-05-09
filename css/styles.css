@@ -1,6 +1,7 @@
 :root {
   --green-color: #5bb034;
   --gray-color: #b1becd;
+  --dark-color: #333333;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 .login-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
 }
 
 .fondo{
@@ -26,7 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   background-color: #e4dddd87;
 }
 
@@ -50,7 +52,7 @@ body {
 }
 
 .ingresar h1 {
-  color: black;
+  color: var(--dark-color);
   font-size: 30px;
   font-weight: lighter;
   margin: 0;
@@ -58,7 +60,7 @@ body {
 }
 
 .ingresar .first-p {
-  color: black;
+  color: var(--dark-color);
   font-size: 16px;
 }
 
@@ -87,6 +89,7 @@ body {
 .password label,
 .email label {
   font-size: 17px;
+  color: var(--dark-color);
 }
 
 .password input,
@@ -183,7 +186,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 90px 0 0 0;
+    padding: 70px 0 20px 0;
   }
   .account .second-p, 
   .account .first-p {
@@ -200,7 +203,6 @@ body {
   .ingresar .first-p,
   .ingresar .second-p{
     width: 260px;
-    text-align: justify;
   }
   .items-container{
     display: flex;
@@ -223,7 +225,7 @@ body {
     flex-direction: column;
   }
   .forget a{
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 
